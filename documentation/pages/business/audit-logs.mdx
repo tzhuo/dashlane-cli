@@ -169,6 +169,10 @@ You can turn on logging sensitive actions in the Policies section of Settings in
 | user_created_credential                    | (user) created a login for %(domain)s                           |
 | user_modified_credential                   | (user) modified the login for %(domain)s                        |
 | user_deleted_credential                    | (user) deleted the login for %(domain)s                         |
+| user_deleted_credential                    | (user) deleted the login for %(domain)s                         |
+| user_performed_autofill_credential         | Autofilled %(credential_login)s login for %(credential_domain)s on %(autofilled_domain)s |
+| user_performed_autofill_payment            | Autofilled %(item_type [bank_account/credit_card])s %(item_name)s on %(autofilled_domain)s |
+| user_authenticated_with_passkey            | Logged in with %(credential_login)s passkey for %(passkey_domain)s on %(current_domain)s |
 
 ## Logs categories
 
@@ -177,6 +181,7 @@ You can turn on logging sensitive actions in the Policies section of Settings in
 | authentication      |
 | dark_web_monitoring |
 | groups              |
+| item_usage          |
 | nudges              |
 | sharing             |
 | team_account        |
